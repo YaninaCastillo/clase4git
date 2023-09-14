@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Clase 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        
+        }
+        body{
+	background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    font-family: 'Borel', cursive;;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;}
+    .titulo{
+        padding: 20px;
+        text-align: center;
+        font-size: 48px;
+        text-transform: uppercase; /* para poner en  mayusculas */
+    }
+    .contenedor{
+        background-color: rgb(247, 162, 205);
+        width: 90%;
+        max-width: 1000px; /* acopla al tamaño del lienzo */
+        margin: 30px auto;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .contenedor > .header,
+    .contenedor > .contenido,
+    .contenedor > .footer,
+    .contenedor > .slide,
+    .contenedor > div{
+        background-color: #ece3e3;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .contenedor .header,
+    .contenedor .footer{
+       background-color: rgb(4, 4, 65);
+       color: white;
+       grid-column: 1/6; /* (1 columna de 6) */ 
+
+    }
+    .contenedor > .contenido{
+        grid-column: span 3; /* el span se encarga de unificar columnas */
+    }
+    .contenedor > .slide{
+        grid-column: span 2;
+        background-color: #a4a4a4;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contenido .articulo{
+        background-color: #464545;
+        color: white;
+        padding: 2px;
+        margin-top: 5px; /* para que separe las tarjetas */ 
+
+    
+    }
+    .contenido >.articulo h1,
+    .contenido > .articulo p{
+        padding: 20px;
+    }
+    .contenedor > .otra-publi{
+        background-color: #282426;
+        color: white;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">CSS GRID</h1>
+    </header>
+    <div class="contenedor">
+        <header class="header"> 
+            <h1>Logo</h1>
+        </header>
+   
+        <main class="contenido">
+            <article class="articulo">
+                <div> 
+                    <h1>titulo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in repellat, cum alias rem aliquam quidem ratione quos illo et.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </article>
+            <article class="articulo">
+                <div> 
+                    <h1>titulo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in repellat, cum alias rem aliquam quidem ratione quos illo et.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </article>
+            <article class="articulo">
+            <div> 
+                <h1>titulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in repellat, cum alias rem aliquam quidem ratione quos illo et.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+        </article>
+       
+        </main>    
+        <aside class="slide">
+            <img src="IMAGES/powerrojo.png" alt="power" style="width: 100%;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, repellendus.</p>
+            <img src="IMAGES/gordo.png" alt="gordo"style="width: 100%;">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, repellendus?</p>
+            <img src="IMAGES/gato2.png" alt=""style="width: 100%;">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, ullam.</p>
+        </aside>
+            <div class="otra-publi">Otra publicacion</div>
+            <div class="otra-publi">Otra publicacion</div>
+            <div class="otra-publi">Otra publicacion</div>
+            <div class="otra-publi">Otra publicacion</div>
+            <div class="otra-publi">Otra publicacion</div>
+
+            <footer class="footer">
+                <h4>footer</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, molestiae.</p>
+            </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7</title>
+    <style>
+       
+        main{
+            display: grid;
+            grid-template-areas: 'encabezado' 'seccion1' 'seccion2' 'footer';
+            grid-gap: 4px;
+            
+        }
+        div{
+            border: 1px solid black;
+            background-color: hotpink;
+        }
+        #encabezado{
+            grid-area: encabezado;
+        }
+        .seccion1{
+            grid-area: seccion1;
+
+        }
+        .seccion2{
+            grid-area: seccion2;
+
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div id="encabezado">Encabezado</div>
+    <div class="seccion1">seccion 1 </div>
+    <div class="seccion2">seccion 2</div>
+    <div id="footer">footer</div>
+
+
+    </main>
+  
+
+
+
+</body>
+</html>

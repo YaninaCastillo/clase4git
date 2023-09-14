@@ -1,0 +1,48 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+div{
+    border: 1px solid black;
+}
+#uno{
+    width: 80%;
+    height: 20%;
+    margin-left: 10%;
+   
+}
+#siete{
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 350px;
+    
+
+}
+#dos{width: 40%;
+    height: 300px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    float: left;
+    
+}
+#tres, #cuatro, #cinco{
+        width: 35%;
+        height: 80px;
+        margin-right: 10%;
+        margin-top: 20px;
+        float: right;
+    }
+
+
+#ocho{
+    width: 80%;
+    height: 60px;
+    margin-left: 10%;
+    margin-top: 16px;
+   
+
+    }

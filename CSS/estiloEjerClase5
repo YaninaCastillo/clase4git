@@ -1,0 +1,29 @@
+.padre{
+    width: 80%;
+    height: 80px;
+   background-color: #0C6C10;
+   display: flex;
+   justify-content: left;
+
+}
+div{
+    width: 80%;
+    height: 40px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.padre{
+    width: 80%;
+    height: 80px;
+   background-color: #0C6C10;
+   display: flex;
+   justify-content: left;
+}

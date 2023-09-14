@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        .nena {
+            background-image: url(images/Image20230811100417.png);
+            /* fotograma */
+            width: 150px;
+            height: 300px;
+            background-position: 0 0;
+            margin: auto;
+            animation: correr 10s steps(5) infinite;
+        }
+
+        @keyframes correr {
+            0% {
+                background-position: 0;
+            }
+
+            100% {
+                background-position: 800px;
+            }
+        }
+
+        .cajita {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            animation-name: pintar;
+            animation-duration: 10s;
+        }
+
+        @keyframes pintar {
+            0% {
+                background-color: hotpink;
+            }
+
+            25% {
+                background-color: blueviolet;
+            }
+
+            50% {
+                background-color: aquamarine;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+
+        .slider {
+            animation: slider 5s infinite ;
+        }
+
+        @keyframes slider {
+            0% {
+                margin-left: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nena"></div>
+    <div class="cajita"></div>
+    <p class="slider">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est dolorem eos consequatur hic, nulla
+        quibusdam ducimus quas nesciunt sequi inventore magnam fugiat </p>
+</body>
+
+</html>

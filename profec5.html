@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 --- Clase 5 --- Maquetador Web Avanzado</title>
+    <style>
+        .padre{
+            width: 80%;
+            height: 80px;
+            background-color: #0C6C10;
+            display: flex;
+            justify-content: left;
+        }
+        div{
+            width: 10%;
+            height: 40px;
+            background-color:azure;
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a:hover{
+            background-color: lightgreen;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="padre">
+        <div class="uno"> <a href="">Inicio</a> </div>
+        <div class="dos"> <a href="">Servicios</a> </div>
+        <div class="tres"> <a href="">Contactos</a> </div>
+        <div class="cuatro"> <a href="">Login</a> </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+*{
+    margin: o;
+    padding: o;
+}
+header{
+   background-color: #A69FA7; 
+   width: 100%;
+   height: 100px;
+}
+.logo{
+    
+    width: 10%;
+    height: 80%;
+    margin-top: 2px;
+    float: left;
+}
+
+
+nav{
+    
+    width: 40%;
+    height: 30%;
+    float: right;
+    margin-left: 10%;
+
+}
+nav a{
+  
+    text-decoration: none;
+    margin-left: 1%;
+}
+.padre{
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    height: 200px;
+}
+.uno{
+    background-color:#89CE8D;
+    width: 50%;
+    height: 150%;
+    float: left;
+
+}
+.dos{
+    background-color:#89CE8D;
+    width: 50%;
+    height: 150%;
+    float: left;
+}
+.padre2{
+    background-color:#F3BAC3;
+    width: 100%;
+    height: 230px;
+}
+.padre3{
+    background-color:#A3C5DB;
+    width: 100%;
+    height: 80px;
+}

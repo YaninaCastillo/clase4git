@@ -1,0 +1,24 @@
+p > a{color: darkorange;
+
+}
+div > a{
+    color: blue;
+    background-color: rgb(183, 235, 115);
+}
+h1 ~ h2{color: blueviolet;}
+
+ul li:nth-child(2){
+    color: rgb(127, 248, 7);
+}
+p::first-line{
+    color: aqua;
+}
+div ul li:nth-last-child(2){
+    color: crimson;
+}
+h1[style="width: 24px;"]{
+    color: rgb(34, 216, 34);
+}
+#texto:focus{
+    background-color: blue;
+}

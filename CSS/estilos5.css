@@ -1,0 +1,8 @@
+.caja1, .caja2, .caja3, .caja4, .caja5{
+    background-color: pink;
+    width: 20%;
+    height: 200px;
+    border: 1px solid black;
+    float: left;
+    box-sizing: content-box;
+}

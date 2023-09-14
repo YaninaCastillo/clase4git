@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hombre caminando</title>
+    <style>
+        #hombre {
+            background-image: url(images/hombre.png);
+            width: 105px;
+            height: 155px;
+            margin: auto;
+            animation: caminar 1s steps(6) infinite;
+            position: relative;
+            top: -35px;
+        }
+        @keyframes caminar {
+            0% {background-position: 0;}
+            100% {background-position: -660px;}
+            }
+        #cielo {
+            background-image: url(images/cielo.png);
+            animation: mover 7s linear infinite;
+        }
+        @keyframes mover {
+            0% {background-position: 0;}
+            100% {background-position: -550px;}
+            }
+        #mar {
+            background-image: url(images/mar.png);
+            position: relative;
+            top: 150px;
+            animation: mover 7s linear infinite;
+        }
+
+        /* @keyframes movermar{
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: -600px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="cielo">
+        <div id="mar">
+            <div id="hombre"></div>
+        </div>
+    </div>
+</body>
+
+</html>

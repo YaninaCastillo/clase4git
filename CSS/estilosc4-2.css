@@ -1,0 +1,26 @@
+.padre{
+    /* display: flex; */ /*forma en que se ve el elemento*/
+    background-color: rgb(100, 238, 213);
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: flex; /*forma en que se ve el elemento*/
+    flex-wrap: wrap; /*obliga a respetar las medidas de las cajas*/
+    flex-direction:row; /* identifica la direccion de vista*/
+    justify-content: flex-start; /* justifica pero se alinea cn el flex-direction */
+    align-items: flex-start; /* controla la alineacion de arriba a abajo */
+}
+div{
+    background-color: rgb(255, 80, 235);
+    width: 20%;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* controla la alineacion de arriba a abajo */
+}
+.rebelde{
+    align-self:flex-end; /* se alinea d acuerdo a sus propios parametros */
+    margin-left: auto;
+}

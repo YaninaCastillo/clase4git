@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hombrecito caminando --- Maquetador Avanzado</title>
+    <style>        
+        #hombrecito {
+            background-image: url(images/hombrecito.png);
+            width: 105px;
+            height: 155px;
+            margin: auto;
+            animation: caminar 1s steps(6) infinite;
+            position: relative;
+            top: -35px;
+
+        }
+        @keyframes caminar {
+            0% {
+                background-position: 0;
+            }
+
+            100% {
+                background-position: -660px;
+            }
+        }
+        #cielo{
+            background-image: url(images/cielo.png);
+        }
+        #mar{
+            background-image: url(images/mar.png);
+            position: relative;
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cielo">
+        <div id="mar">
+            <div id="hombrecito"></div>
+        </div>
+    </div>
+</body>
+
+</html>

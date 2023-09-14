@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase5</title>
+   <link rel="stylesheet" href="CSS/estiloEjerClase5">
+<style>
+  .padre{
+    width: 80%;
+    height: 80px;
+   background-color: #0C6C10;
+   display: flex;
+   justify-content: left;
+
+}
+div{
+    width: 10%;
+    height: 40px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+div .uno:hover, .dos:hover, .tres:hover, .cuatro:hover{
+  background-color: lightgreen;
+  color: blueviolet;
+}
+/* .cuatro{
+  margin-left: auto;
+} */
+.cuatro{
+  align-self: flex-end;
+  margin-left: auto;
+  margin-bottom: 1%;
+}
+</style>
+  </head>
+<body>
+   <!--  <div class="padre">
+        <div class="uno"><a href="">Inicio</a> </div>
+        <div class="dos"><a href="">Sevicios</a></div>
+        <div class="tres"><a href="">Contactos</a></div>
+        <div class="cuatro"> <a href="">Login</a></div>
+    </div>
+  -->
+  <div class="padre">
+    <div class="uno"> <a href="">inicio</a></div>
+    <div class="dos"> <a href="">servicios</a></div>
+    <div class="tres"><a href="">contacto</a></div>
+    <div class="cuatro"><a href="">login</a></div>
+  </div>
+</body>
+</html>
